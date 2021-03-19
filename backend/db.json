@@ -1,0 +1,28 @@
+{
+  "spends": [
+    {
+      "id": 1,
+      "date": "19/03/2021",
+      "product": "Lapis",
+      "place": "Papelaria do joão",
+      "price": "2.00",
+      "payment": "Cartão de credito"
+    },
+    {
+      "id": 2,
+      "date": "10/03/2021",
+      "product": "arroz",
+      "place": "Mercado da esquina",
+      "price": "20.00",
+      "payment": "Cartão de debito"
+    },
+    {
+      "id": 3,
+      "date": "15/03/2021",
+      "product": "Oleo",
+      "place": "Oficina do joaquim",
+      "price": "80.00",
+      "payment": "Dinheiro"
+    }
+  ]
+}
