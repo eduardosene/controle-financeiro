@@ -1,28 +1,28 @@
 {
   "spends": [
     {
-      "id": 1,
-      "date": "19/03/2021",
+      "date": "2021-03-22T20:20:34.272Z",
+      "product": "Caneta",
+      "place": "Papelaria da Joana",
+      "price": "1",
+      "payment": "Credito",
+      "id": 4
+    },
+    {
+      "date": "2021-03-19T03:00:00.000Z",
       "product": "Lapis",
-      "place": "Papelaria do joão",
-      "price": 2.0,
-      "payment": "Cartão de credito"
+      "place": "Papelaria do João",
+      "price": "2",
+      "payment": "Cartão de credito",
+      "id": 5
     },
     {
-      "id": 2,
-      "date": "10/03/2021",
-      "product": "arroz",
-      "place": "Mercado da esquina",
-      "price": 20.0,
-      "payment": "Cartão de debito"
-    },
-    {
-      "id": 3,
-      "date": "15/03/2021",
-      "product": "Oleo",
+      "date": "2021-03-10T03:00:00.000Z",
+      "product": "Oleo de moto",
       "place": "Oficina do joaquim",
-      "price": 80.0,
-      "payment": "Dinheiro"
+      "price": "80",
+      "payment": "Dinheiro",
+      "id": 6
     }
   ]
 }
