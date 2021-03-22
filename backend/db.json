@@ -5,7 +5,7 @@
       "date": "19/03/2021",
       "product": "Lapis",
       "place": "Papelaria do joão",
-      "price": "2.00",
+      "price": 2.0,
       "payment": "Cartão de credito"
     },
     {
@@ -13,7 +13,7 @@
       "date": "10/03/2021",
       "product": "arroz",
       "place": "Mercado da esquina",
-      "price": "20.00",
+      "price": 20.0,
       "payment": "Cartão de debito"
     },
     {
@@ -21,7 +21,7 @@
       "date": "15/03/2021",
       "product": "Oleo",
       "place": "Oficina do joaquim",
-      "price": "80.00",
+      "price": 80.0,
       "payment": "Dinheiro"
     }
   ]

@@ -1,6 +1,15 @@
-import { MatToolbar } from '@angular/material/toolbar';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+//forms
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
+//API
+import { HttpClientModule } from '@angular/common/http';
 
 //Material Design
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -8,6 +17,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +30,8 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './views/home/home.component';
 import { SpendsViewComponent } from './views/spends-view/spends-view.component';
+import { SpendsReadComponent } from './components/spends/spends-read/spends-read.component';
+import { SpendsCreateComponent } from './components/spends/spends-create/spends-create.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +41,8 @@ import { SpendsViewComponent } from './views/spends-view/spends-view.component';
     FooterComponent,
     HomeComponent,
     SpendsViewComponent,
+    SpendsReadComponent,
+    SpendsCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,8 +53,17 @@ import { SpendsViewComponent } from './views/spends-view/spends-view.component';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    HttpClientModule,
+    MatTableModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSnackBarModule,
   ],
-  providers: [],
+  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt-BR' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
