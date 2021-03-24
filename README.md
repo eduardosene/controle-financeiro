@@ -1,3 +1,4 @@
-# sistema basico de Controle Financeiro diário
-## Liguagens: Angular9, Material UI, TypeScrip, HTML e CSS 
+# Sistema de Controle Financeiro Diário
+## Liguagens: Angular 9, Material UI, TypeScrip, HTML e CSS 
 
+###Objetivo desta aplicação é aplicar o CRUD utilizando as tecnologias acima descritas 
