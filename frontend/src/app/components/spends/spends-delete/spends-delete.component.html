@@ -1,0 +1,59 @@
+<mat-card class="mat-elevation-z3 delete-card">
+  <mat-card-title>Excluir Gasto</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        placeholder="Data"
+        [(ngModel)]="spend.date"
+        name="date"
+        disabled
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon> keyboard_arrow_down </mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="O que ?"
+        [(ngModel)]="spend.product"
+        name="product"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Onde ?"
+        [(ngModel)]="spend.place"
+        name="place"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Quando ?"
+        [(ngModel)]="spend.price"
+        name="price"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Como ?"
+        [(ngModel)]="spend.payment"
+        name="payment"
+        disabled
+      />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="deleteSpend()" color="primary">
+    Excluir
+  </button>
+  <button mat-raised-button (click)="cancelSpend()">Cancelar</button>
+</mat-card>

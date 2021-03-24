@@ -1,3 +1,4 @@
+import { SpendsDeleteComponent } from './components/spends/spends-delete/spends-delete.component';
 import { SpendsUpdateComponent } from './components/spends/spends-update/spends-update.component';
 import { SpendsCreateComponent } from './components/spends/spends-create/spends-create.component';
 import { HomeComponent } from './views/home/home.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'spends/update/:id',
     component: SpendsUpdateComponent,
+  },
+  {
+    path: 'spends/delete/:id',
+    component: SpendsDeleteComponent,
   },
 ];
 

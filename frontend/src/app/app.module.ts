@@ -33,6 +33,7 @@ import { SpendsViewComponent } from './views/spends-view/spends-view.component';
 import { SpendsReadComponent } from './components/spends/spends-read/spends-read.component';
 import { SpendsCreateComponent } from './components/spends/spends-create/spends-create.component';
 import { SpendsUpdateComponent } from './components/spends/spends-update/spends-update.component';
+import { SpendsDeleteComponent } from './components/spends/spends-delete/spends-delete.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { SpendsUpdateComponent } from './components/spends/spends-update/spends-
     SpendsReadComponent,
     SpendsCreateComponent,
     SpendsUpdateComponent,
+    SpendsDeleteComponent,
   ],
   imports: [
     BrowserModule,
