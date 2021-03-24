@@ -8,7 +8,7 @@ import { Spend } from '../spend.model';
   styleUrls: ['./spends-read.component.css'],
 })
 export class SpendsReadComponent implements OnInit {
-  columnsToDisplay = ['date', 'product', 'place', 'price', 'payment'];
+  columnsToDisplay = ['date', 'product', 'place', 'price', 'payment', 'action'];
   spends: Spend[];
 
   constructor(private spendsService: SpendsService) {

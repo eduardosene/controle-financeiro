@@ -22,7 +22,15 @@ export class SpendsService {
   read(): Observable<Spend[]> {
     return this.http.get<Spend[]>(this.baseUrl);
   }
-  create(spend: Spend): Observable<Spend[]> {
-    return this.http.post<Spend[]>(this.baseUrl, spend);
+  create(spend: Spend): Observable<Spend> {
+    return this.http.post<Spend>(this.baseUrl, spend);
+  }
+  readById(id: number): Observable<Spend> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Spend>(url);
+  }
+  update(spend: Spend): Observable<Spend> {
+    const url = `${this.baseUrl}/${spend.id} `;
+    return this.http.put<Spend>(url, spend);
   }
 }

@@ -1,0 +1,54 @@
+<mat-card class="mat-elevation-z3 update-card">
+  <mat-card-title> Alterar Gastos </mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        placeholder="Data"
+        [(ngModel)]="spend.date"
+        name="date"
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="O que ?"
+        [(ngModel)]="spend.product"
+        name="product"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Onde ?"
+        [(ngModel)]="spend.place"
+        name="place"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Quando ?"
+        [(ngModel)]="spend.price"
+        name="price"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Como ?"
+        [(ngModel)]="spend.payment"
+        name="payment"
+      />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="updateSpend()" color="primary">
+    Atualizar
+  </button>
+  <button mat-raised-button (click)="cancelSpend()">Cancelar</button>
+</mat-card>

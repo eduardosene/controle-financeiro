@@ -23,6 +23,14 @@
       "price": "80",
       "payment": "Dinheiro",
       "id": 6
+    },
+    {
+      "date": "2021-03-10T03:00:00.000Z",
+      "product": "jighsda",
+      "place": "dsia",
+      "price": "1",
+      "payment": "debito",
+      "id": 7
     }
   ]
 }

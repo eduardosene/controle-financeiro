@@ -1,3 +1,4 @@
+import { SpendsUpdateComponent } from './components/spends/spends-update/spends-update.component';
 import { SpendsCreateComponent } from './components/spends/spends-create/spends-create.component';
 import { HomeComponent } from './views/home/home.component';
 import { SpendsViewComponent } from './views/spends-view/spends-view.component';
@@ -14,8 +15,12 @@ const routes: Routes = [
     component: SpendsViewComponent,
   },
   {
-    path: 'products/create',
+    path: 'spends/create',
     component: SpendsCreateComponent,
+  },
+  {
+    path: 'spends/update/:id',
+    component: SpendsUpdateComponent,
   },
 ];
 

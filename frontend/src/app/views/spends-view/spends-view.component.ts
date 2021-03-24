@@ -11,6 +11,6 @@ export class SpendsViewComponent implements OnInit {
 
   ngOnInit(): void {}
   navigateToProductCreate() {
-    this.router.navigate(['products/create']);
+    this.router.navigate(['spends/create']);
   }
 }
